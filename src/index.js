@@ -5,7 +5,7 @@ const app = document.querySelector('#app')
 
 let contentHome = ""
 
-contentHome += Header('Welcome')
+contentHome += Header('Bienvenue à tous !!!')
 contentHome += Footer('Mon footer !!!')
 
 app.innerHTML = contentHome
