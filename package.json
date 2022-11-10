@@ -1,7 +1,7 @@
 {
   "name": "component-without-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Création rapide d'environnement de développement webpack",
   "main": "babel.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,5 +29,13 @@
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullcycle/component-without-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fullcycle/component-without-react/issues"
+  },
+  "homepage": "https://github.com/fullcycle/component-without-react#readme"
 }
