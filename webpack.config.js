@@ -21,6 +21,14 @@ module.exports = {
           loader: "babel-loader"
         }
       },
+      // EJS
+      {
+        test: /\.ejs$/,
+        loader: "ejs-loader",
+        options: {
+          esModule: false
+        }
+      },
       // CSS / SASS
       {
         test: /\.(scss|sass|css)$/,
@@ -55,12 +63,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename : "index.html",
-      template: path.resolve(__dirname, "src/index.html"),
+      template: path.resolve(__dirname, "src/index.ejs"),
       chunks: "main"
     }),
     new HtmlWebpackPlugin({
       filename : "contact.html",
-      template: path.resolve(__dirname, "src/contact.html"),
+      template: path.resolve(__dirname, "src/contact.ejs"),
       chunks: "contact"
     }),
   ],
