@@ -1,6 +1,7 @@
 import "./default.scss"
 import Header from "./datas/Header"
 import Footer from "./datas/Footer"
+
 const app = document.querySelector('#app')
 
 let contentHome = ""

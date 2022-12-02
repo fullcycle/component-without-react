@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     main : path.join(__dirname, "./src/index.js"),
     contact : path.join(__dirname, "./src/assets/js/contact.js"),
+    test : path.join(__dirname, "./src/assets/js/test.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -64,12 +65,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename : "index.html",
       template: path.resolve(__dirname, "src/index.ejs"),
-      chunks: "main"
+      chunks: ["main", "test"]
     }),
     new HtmlWebpackPlugin({
       filename : "contact.html",
       template: path.resolve(__dirname, "src/contact.ejs"),
-      chunks: "contact"
+      chunks: ["contact", "test"]
     }),
   ],
   stats: "minimal",
